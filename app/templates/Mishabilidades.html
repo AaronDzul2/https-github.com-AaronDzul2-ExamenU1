@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Portafolio_Aaron_Habilidades{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: url('{{ url_for("static", filename="img.jpg") }}') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='cuca.jpg') }}" alt="" height="30">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Mishabilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Misdatos">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comentarios">comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="container text-white">
+    <h1>Algunas de</h1>
+    <h1>mis habilidades</h1>
+</div>
+</center>
+
+<div class="container text-center mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="skill-box">
+                <p  class="container text-white" >Java</p>
+                <div class="square">
+                    <img src="{{ url_for('static', filename='java.jpg') }}" alt="Java Image">
+                </div>
+                <div  class="container text-white">
+                <p>He trabajado por lo menos un año y medio con java<p>
+                <p>siendo uno de los lenguajes de programación que más <p>
+                <p>domino además de que con él que más he programado </p>
+                <p>A pesar de que sea un poco obsoleto como muchos <p>
+                <p>dicen lo sigo emplenado en algunas practicas o
+                <p> desarollos independientes</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-box">
+                <p  class="container text-white" >Python</p>
+                <div class="square">
+                    <img src="{{ url_for('static', filename='Python.jpg') }}" alt="Python Image">
+                </div>
+                <div  class="container text-white">
+                <p>Hace muy poco me he introducido al mundo del Python<p>
+                <p>debido a que es algo nuevo para mí no tengo mucho <p>
+                <p>conocmiento de este sin embargo ya hemos comenzado. </p>
+                <p>He logrado crear mis paginas con flask, html y ccs<p>
+                <p>además de querer seguir aprendiendo e introducirles <p>
+                <p>MySQL para una futura base de datos en pagina web.</p>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

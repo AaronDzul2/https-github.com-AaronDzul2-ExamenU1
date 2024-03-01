@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}Portafolio_Aaron_Datos{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: url('{{ url_for("static", filename="room2.jpg") }}') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='cuca.jpg') }}" alt="" height="30">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Mishabilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Misdatos">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comentarios">comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  
+<br>
+<div class="container text-center mt-4">
+    <div class="profile-box"> 
+        <div class="profile-square text-white">
+            <img src="{{ url_for('static', filename='Aaron.jpeg') }}" alt="Tu Foto">
+        </div>
+        <div class="portfolio-text">
+            <h1 class="text-white">Aaron Yosafat Dzul Esquivel</h1>
+            <p class="text-white">Ingeniería en Sistemas Computacionales</p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                Comunicame:
+                Correo: aaron.dzul.esquivel@gmail.com/ 
+                Teléfono: 999937285/ 
+                Estudiante del tecnologico superior Progreso.
+            </p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                Redes sociales:
+                Ig: Its_Friki_12/ 
+                Fb: Aaron Esquivel
+           
+        </div>
+    </div>
+</div>
+
+{% endblock %}
